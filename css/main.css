@@ -1,0 +1,72 @@
+html, body {
+  font-size: 16px;
+  font-family: 'Karla', sans-serif;
+  color: #343838;
+  background: #FFFFFF;
+  height: 100%;
+  border-top: 4px solid #FE5F55; 
+}
+
+main {
+  height: 100%;
+  padding: 2rem 1rem;
+  max-width: 45rem;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+
+a {
+  color: #BDBDBD;
+  text-decoration: none;
+  position: relative;
+}
+
+a:hover {
+  color: #2D3A4B;
+}
+
+a:hover:before {
+  visibility: visible;
+  -webkit-transform: scaleX(1);
+  transform: scaleX(1);
+}
+
+a:before {
+  content: " ";
+  position: absolute;
+  width: 100%;
+  height: 2px;
+  bottom: 0;
+  left: 0;
+  background-color: #FE5F55;
+  visibility: hidden;
+  -webkit-transform: scaleX(0);
+  transform: scaleX(0);
+  -webkit-transition: all 0.3s ease-in-out 0s;
+  transition: all 0.3s ease-in-out 0s;
+}
+
+.structure {
+  display: flex;
+}
+
+.structure.internet {
+  justify-content: space-between;
+  margin-top: 2rem;
+}
+
+.structure.intro {
+  align-items: center;
+  flex-direction: column;
+}
+
+.intro h1,
+.intro h3 {
+  margin: .3rem 0;
+}
+
+.secondary {
+  color: #626C75;
+}
