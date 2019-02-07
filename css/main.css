@@ -1,10 +1,13 @@
+@import url('https://rsms.me/inter/inter.css');
+
 html, body {
-  font-size: 16px;
-  font-family: 'Karla', sans-serif;
+  font-size: 20px;
+  font-family: 'Inter var', sans-serif;
   color: #343838;
   background: #FFFFFF;
   height: 100%;
-  border-top: 4px solid #FE5F55; 
+  border-top: 4px solid #FE5F55;
+  overflow-y: hidden;
 }
 
 main {
@@ -64,6 +67,7 @@ a:before {
 
 .intro h1,
 .intro h3 {
+  font-weight: 500!important;
   margin: .3rem 0;
 }
 
